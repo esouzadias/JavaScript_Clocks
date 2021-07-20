@@ -31,29 +31,29 @@ body {
   font-weight: bold;
 }
 
-.analog-clock {
+.clock .analog-clock {
   padding: 50px 0;
 }
 
-.analog-clock h1 {
+.clock .analog-clock h1 {
   text-align: center;
 }
 
-.analog-clock canvas {
+.clock .analog-clock canvas {
   width: 50%;
 }
 
-.digital-clock {
+.clock .digital-clock {
   background-color: black;
   padding: 0 !important;
 }
 
-.digital-clock h1 {
+.clock .digital-clock h1 {
   text-align: center;
   color: white;
 }
 
-.digital-clock #clock {
+.clock .digital-clock #clock {
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -75,7 +75,7 @@ body {
 
 .countdown span {
   font-weight: 400;
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .countdown h1 {
@@ -86,7 +86,7 @@ body {
 
 .countdown button {
   width: auto;
-  font-size: 40px;
+  font-size: 20px;
   border: none;
   background-color: white;
   color: black;
@@ -101,6 +101,7 @@ body {
 .countdown button:hover {
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
 .countdown2 {
@@ -109,7 +110,7 @@ body {
 
 .countdown2 button {
   width: auto;
-  font-size: 40px;
+  font-size: 30px;
   border: none;
   background-color: black;
   color: white;
@@ -124,6 +125,7 @@ body {
 .countdown2 button:hover {
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
 .countdown2 span {
@@ -140,5 +142,37 @@ body {
   text-decoration: none;
   padding: 10px 30px;
   border-radius: 20px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.countdown2 .runBtn:hover {
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.timer {
+  background-color: lightgray;
+  padding: 50px 0;
+  font-size: 50px;
+  color: gray;
+}
+
+.timer button {
+  border: none;
+  border-radius: 100px;
+  padding: 10px 40px;
+  margin: 0 20px;
+  font-size: 30px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.timer button:hover {
+  background-color: lightgray;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
